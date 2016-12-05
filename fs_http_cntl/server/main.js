@@ -15,7 +15,7 @@ Meteor.startup(() => {
       
       //console.log(builder.buildObject(element));
       
-      WebApp.connectHandlers.use("/", function(req, res, next) {
+      WebApp.connectHandlers.use("/hello", function(req, res, next) {
                   console.log("on hello");
                   res.writeHead(200);
                   res.end(varreactHtml);

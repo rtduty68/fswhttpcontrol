@@ -16,6 +16,3 @@ http://www.youtube.com/user/c9ide.
 
 Happy coding!
 The Cloud9 IDE team
-使用 
-http://fswhttpcontrol-lubin.c9users.io/
-使用时需要输入c9的密码 
