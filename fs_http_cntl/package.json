@@ -8,6 +8,7 @@
     "babel-runtime": "6.18.0",
     "jsx-to-html": "^1.1.0",
     "meteor-node-stubs": "~0.2.0",
+    "modesl": "^1.1.8",
     "react": "^15.4.1",
     "react-dom": "^15.4.1",
     "xml2js": "^0.4.17"

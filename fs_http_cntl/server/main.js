@@ -7,7 +7,6 @@ import ReactDOMServer from 'react-dom/server'
 import App from './response.jsx';
 Meteor.startup(() => {
   // code to run on server at startup
-      
       var el = React.createElement(App,{test:"blue", uu: "bb"});
       var varreactHtml=ReactDOMServer.renderToStaticMarkup(el);
       varreactHtml = varreactHtml.replace(/data-/g,"");
@@ -17,7 +16,8 @@ Meteor.startup(() => {
       
       WebApp.connectHandlers.use("/hello", function(req, res, next) {
                   console.log("on hello");
-                  res.writeHead(200);
+                  console.log("url is " + req.url);
+                  res.writeHead(200,{ 'Content-Type': 'text/xml'});
                   res.end(varreactHtml);
                 });
 });

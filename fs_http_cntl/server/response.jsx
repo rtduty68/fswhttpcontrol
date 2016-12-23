@@ -12,11 +12,14 @@ export default class App extends Component {
   render() {
     return (
     <document type="xml/freeswitch-httapi">
-         <params></params>
+         <params>
+           <someparam>abc</someparam>
+         </params>
+         <variables>
+           <somevar>efg</somevar>
+         </variables>
          <work>
-          <playback data-name= {this.props.test} data-file={this.props.uu} data-error-file="http://my.com/sounds/invalid.wav" data-input-timeout="5000">
-           <bind data-strip="#">~\d+#</bind>
-          </playback>
+          <log data-action="null"> end httpapi</log>
          </work>
     </document>
     );
